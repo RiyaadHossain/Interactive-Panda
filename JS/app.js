@@ -62,3 +62,20 @@ document.getElementById("input").addEventListener("dblclick", (ev) => {
   document.getElementById("bg").style.backgroundColor = "cyan";
   
 });
+
+
+// ############# Extra Silly Task #############
+// Task 1 
+console.log(document.getElementById("see"))
+
+// Task 2 
+const bag = document.getElementsByClassName("bags");
+
+for(const x of bag){
+  x.addEventListener("click", () => {
+    x.innerText = "BackPack"
+  })
+  x.addEventListener("dblclick", () => {
+    x.innerText = "Bags"
+  })
+}
